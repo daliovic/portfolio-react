@@ -1,8 +1,9 @@
 /* define primary color */
 :root {
   --color-primary: #99cc00;
-  --color-light:#dbf58f;
+  --color-light: #dbf58f;
 }
+/* import poppins font */
 
 .main-container {
   /* max-width: 1140px; */
@@ -10,13 +11,13 @@
   /* overflow-y: hidden; */
   height: 100%;
 }
-#tsparticles{
+#tsparticles {
   opacity: 0.4;
 }
 
 .button {
   font-size: 1.2rem;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   background-color: var(--color-primary);
   border-radius: 50px;

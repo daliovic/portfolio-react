@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import './Hero.css'
 
 export default function Hero() {
@@ -8,9 +9,10 @@ export default function Hero() {
         <h3 className=''>Hello, I'm</h3>
         <h1 className=''>Mohamed Ali</h1>
         <h2 className=''>Frontend Developer | ReactJS - Typescript</h2>
-        <button className='btn'>Hire Me</button>
+        <Link to='about'>
+          <button className='btn'>Hire Me</button>
+        </Link>
       </div>
-
     </div>
   )
 }

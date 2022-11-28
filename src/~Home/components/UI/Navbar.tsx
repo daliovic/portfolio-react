@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../../assets/graphics/MALogo.svg'
-import { NavLink } from 'react-router-dom'
+import {Link} from 'react-scroll'
+
 import './Navbar.css'
 
 export default function Navbar() {
@@ -20,34 +21,34 @@ export default function Navbar() {
         </button>
 
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-          <a className='navbar-brand mt-2 mt-lg-0' href='#'>
+          <Link className='navbar-brand mt-2 mt-lg-0' to='hero'>
             <img src={logo} height='15' alt='MDB Logo' loading='lazy' />
-          </a>
+          </Link>
           <ul className='navbar-nav mx-auto mb-2 mb-lg-0 w-50 justify-content-around'>
             <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <Link className='nav-link' spy={true} to='hero'>
                 HOME
-              </NavLink>
+              </Link>
             </li>
             <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <Link className='nav-link' spy={true} to='about'>
                 ABOUT
-              </NavLink>
+              </Link>
             </li>
             {/* <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <Link className='nav-link' to='/'>
                 RESUME
-              </NavLink>
+              </Link>
             </li> */}
             <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <Link className='nav-link' spy={true} to='portfolio'>
                 PORTFOLIO
-              </NavLink>
+              </Link>
             </li>
             <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <Link className='nav-link' spy={true} to='contact'>
                 CONTACT
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>

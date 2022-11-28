@@ -17,7 +17,7 @@ const info: infoType = {
 
 export default function About() {
   return (
-    <div className='section-wrapper'>
+    <div id={'about'} className='section-wrapper'>
       <div className='section about d-flex flex-column align-items-center'>
         <h4>ABOUT ME</h4>
         <div className='d-flex'>

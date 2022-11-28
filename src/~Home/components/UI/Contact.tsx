@@ -12,7 +12,7 @@ const info: infoType = {
 
 export default function Contact() {
   return (
-    <div className='section-wrapper contact'>
+    <div id="contact" className='section-wrapper contact'>
       <div className='section about d-flex flex-column align-items-center'>
         <h4>Contact</h4>
         <div className='d-flex col-12 justify-content-around'>

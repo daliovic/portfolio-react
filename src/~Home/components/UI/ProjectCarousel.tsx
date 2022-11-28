@@ -14,35 +14,35 @@ export default function ProjectCarousel() {
         <Carousel.Item>
           <img className='d-block w-100' src={img1} alt='First slide' />
           <Carousel.Caption>
-            <h3>Login</h3>
+            <h5>Login</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className='d-block w-100' src={img2} alt='Second slide' />
 
           <Carousel.Caption>
-            <h3>Home</h3>
+            <h5>Home</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className='d-block w-100' src={img3} alt='Second slide' />
 
           <Carousel.Caption>
-            <h3>Budget tracker</h3>
+            <h5>Budget tracker</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className='d-block w-100' src={img4} alt='Second slide' />
 
           <Carousel.Caption>
-            <h3>Todo list</h3>
+            <h5>Todo list</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className='d-block w-100' src={img5} alt='Second slide' />
 
           <Carousel.Caption>
-            <h3>Invitation maker</h3>
+            <h5>Invitation maker</h5>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
