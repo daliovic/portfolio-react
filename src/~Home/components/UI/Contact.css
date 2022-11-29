@@ -2,7 +2,57 @@
   min-height: 0;
   padding-bottom: 200px;
   background-color: rgba(10, 16, 30, 0.911);
-  width: 100vw;
   min-height: 100vh;
+}
 
+.test-card1 {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+}
+.test-card2 {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #70c500;
+}
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: aliceblue;
+}
+.contact ul li {
+  margin: 10px 0;
+}
+
+.contact .icon-container {
+  width: 51px;
+  height: 50px;
+  border-radius: 25px;
+  border: #202a36 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: left center;
+  margin-bottom: 15px;
+  transition: border-color 0.8s ease-in-out,;
+ /* transiotion border color */
+ 
+}
+.contact .icon-container:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+
+
+}
+.contact svg{
+  width: 45%;
+  height: 45%;
+}
+
+.icons {
+  gap: 20px;
+  flex-wrap: nowrap;
 }
