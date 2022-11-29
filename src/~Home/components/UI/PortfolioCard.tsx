@@ -56,6 +56,7 @@ export default function PortfolioCard({
   }
 
   const [show, setShow] = useState(false)
+  const ref = React.useRef<HTMLDivElement>(null)
   const handleShow = () => {
     setShow(true)
   }
@@ -69,7 +70,10 @@ export default function PortfolioCard({
       className='d-flex flex-column custom-card'
       initial='hidden'
       whileHover='visible'
+      whileFocus='visible'
+      onTap={() => {handleShow(); console.log(ref.current)}}
       animate='hidden'
+      ref={ref}
       variants={cardVariants}
       //   style={{ backgroundImage: `url(${bg})`,}}
     >

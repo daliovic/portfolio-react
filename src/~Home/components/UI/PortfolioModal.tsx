@@ -35,7 +35,12 @@ export default function PortfolioModal({
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
-        {<Modal.Body>{component()}</Modal.Body>}
+        {
+          <Modal.Body>
+            <p className='d-block d-md-none text-muted text-center'>(I haven't optimized all mini projects to be mobile friendly yet)</p>
+            {component()}
+          </Modal.Body>
+        }
         <Modal.Footer>
           <button className='modal-button' onClick={handleHide}>
             Close

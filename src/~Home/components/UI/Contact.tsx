@@ -73,7 +73,7 @@ export default function Contact() {
     <div id='contact' className='section-wrapper contact'>
       <div className='section about d-flex flex-column align-items-center'>
         <h4>Contact</h4>
-        <div className='d-flex col-12 justify-content-around'>
+        <div className='d-flex col-12 justify-content-around flex-column flex-lg-row'>
           {info.map((key: any) => (
             <div className='d-flex flex-column justify-content-center align-items-center' key={key[0]}>
               <div className='d-flex justify-content-center align-items-center'>

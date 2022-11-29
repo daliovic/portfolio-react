@@ -18,13 +18,13 @@ const info: infoType = {
 export default function About() {
   return (
     <div id={'about'} className='section-wrapper'>
-      <div className='section about d-flex flex-column align-items-center'>
+      <div className='section about d-flex flex-column align-items-center px-4 px-lg-0'>
         <h4>ABOUT ME</h4>
-        <div className='d-flex'>
-          <div className='col-6 d-flex flex-column pe-5'>
+        <div className='d-flex flex-column flex-lg-row justify-content-center align-items-center w-100 gap-4 gap-lg-0 mb-4 mb-lg-0'>
+          <div className='col-8 col-lg-6 d-flex flex-column pe-lg-5'>
             <img src={myPhoto} className='w-100' alt='Mohamed Ali Ben Thaier' />
           </div>
-          <div className='col-6 d-flex flex-column align-items-start px-5'>
+          <div className='col-12 col-lg-6 d-flex flex-column align-items-start px-lg-5'>
             <h3>Hi there</h3>
             <p>
               I am a self-taught and hardworking junior frontend developer. Looking to leverage my problem-solving
@@ -46,10 +46,10 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <div className='mt-auto'>
+            <div className='mt-auto mx-auto ms-lg-0'>
               <button className='btn'>
                 {' '}
-                <a href={myCv} style={{ color: 'inherit', textDecoration : 'none' }} download='true'>
+                <a href={myCv} style={{ color: 'inherit', textDecoration: 'none' }} download='true'>
                   {' '}
                   Download CV
                 </a>

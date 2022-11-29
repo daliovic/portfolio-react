@@ -9,7 +9,7 @@ import { Carousel } from 'react-bootstrap'
 
 export default function ProjectCarousel() {
   return (
-    <div className='container col-11' style={{ minHeight: '50vh', margin: '20px auto' }}>
+    <div className='container col-11 d-none d-lg-block' style={{ minHeight: '50vh', margin: '20px auto' }}>
       <Carousel variant='dark' interval={null}>
         <Carousel.Item>
           <img className='d-block w-100' src={img1} alt='First slide' />
