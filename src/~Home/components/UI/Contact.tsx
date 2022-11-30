@@ -17,7 +17,7 @@ const info: any = [
   ['WhatsApp', '+216 53 458 430', FaWhatsapp, 'https://wa.me/21653458430'],
   ['LinkedIn', 'MedAliBT', FaLinkedin, 'https://www.linkedin.com/in/medalibt/'],
   ['Email', 'med.ali.benthaier@gmail.com', FaEnvelope, 'mailto:med.ali.benthaier@gmail.com'],
-  ['GitHub', 'daliovic', FaGithub, 'github.com/daliovic'],
+  ['GitHub', 'daliovic', FaGithub, 'https://www.github.com/daliovic'],
 ]
 
 export default function Contact() {
@@ -96,10 +96,6 @@ export default function Contact() {
           </div>
           <PopupButton
             url='https://calendly.com/medalibenthaier/interview'
-            /*
-             * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-             * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-             */
             rootElement={document.getElementById('root') as HTMLElement}
             text='Click here to schedule!'
           />

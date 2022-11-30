@@ -49,7 +49,7 @@ export default function About() {
             <div className='mt-auto mx-auto ms-lg-0'>
               <button className='btn'>
                 {' '}
-                <a href={myCv} style={{ color: 'inherit', textDecoration: 'none' }} download='true'>
+                <a href={myCv} style={{ color: 'inherit', textDecoration: 'none' }} download>
                   {' '}
                   Download CV
                 </a>
