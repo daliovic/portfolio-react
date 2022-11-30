@@ -37,17 +37,25 @@
   align-items: center;
   transform-origin: left center;
   margin-bottom: 15px;
-  transition: border-color 0.8s ease-in-out,;
- /* transiotion border color */
- 
+  transition: 0.5s ease-in-out;
+
+  /* transiotion border color */
 }
-.contact .icon-container:hover {
+.contact a:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
-
-
+  transition: 0.5s ease-in-out;
 }
-.contact svg{
+.contact a:hover .icon-container {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transition: 0.5s ease-in-out;
+}
+.contact a {
+  transition: 0.5s ease-in-out;
+}
+
+.contact svg {
   width: 45%;
   height: 45%;
 }
@@ -55,4 +63,13 @@
 .icons {
   gap: 20px;
   flex-wrap: nowrap;
+}
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact button{
+  padding: 10px 20px !important;
 }

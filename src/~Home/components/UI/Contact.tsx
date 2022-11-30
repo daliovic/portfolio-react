@@ -7,16 +7,17 @@ import { FaGithub } from 'react-icons/fa'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
-import qr from "../../../assets/graphics/Whatsapp QR.png"
+import qr from '../../../assets/graphics/Whatsapp QR.png'
 type infoType = {
   [key: string]: any
 }
 import myPhoto from '../../../assets/graphics/Me Dark Background square.jpg'
+import { PopupButton } from 'react-calendly'
 const info: any = [
-  ['WhatsApp', '+216 53 458 430', FaWhatsapp],
-  ['LinkedIn', 'MedAliBT', FaLinkedin],
-  ['Email', 'med.ali.benthaier@gmail.com', FaEnvelope],
-  ['GitHub', 'daliovic', FaGithub],
+  ['WhatsApp', '+216 53 458 430', FaWhatsapp, 'https://wa.me/21653458430'],
+  ['LinkedIn', 'MedAliBT', FaLinkedin, 'https://www.linkedin.com/in/medalibt/'],
+  ['Email', 'med.ali.benthaier@gmail.com', FaEnvelope, 'mailto:med.ali.benthaier@gmail.com'],
+  ['GitHub', 'daliovic', FaGithub, 'github.com/daliovic'],
 ]
 
 export default function Contact() {
@@ -75,17 +76,33 @@ export default function Contact() {
         <h4>Contact</h4>
         <div className='d-flex col-12 justify-content-around flex-column flex-lg-row'>
           {info.map((key: any) => (
-            <div className='d-flex flex-column justify-content-center align-items-center' key={key[0]}>
-              <div className='d-flex justify-content-center align-items-center'>
-                {/* {console.log(key[2])} */}
-                <div className='icon-container'>{key[2]()}</div>
-                {/* <div className=''>{key[0]}</div> */}
+            <a key={key[0]} href={`${key[3]}`}>
+              <div className='d-flex flex-column justify-content-center align-items-center'>
+                <div className='d-flex justify-content-center align-items-center'>
+                  {/* {console.log(key[2])} */}
+                  <div className='icon-container'>{key[2]()}</div>
+                  {/* <div className=''>{key[0]}</div> */}
+                </div>
+                <div className='d-flex'>
+                  <p className=''>{key[1]}</p>
+                </div>
               </div>
-              <div className='d-flex'>
-                <p className=''>{key[1]}</p>
-              </div>
-            </div>
+            </a>
           ))}
+        </div>
+        <div className='d-flex flex-column justify-content-center align-items-center pt-5 text-center px-3'>
+          <div>
+            <p>{`Feel free to schedule a meeting if you are interested in hiring me :)`}</p>
+          </div>
+          <PopupButton
+            url='https://calendly.com/medalibenthaier/interview'
+            /*
+             * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+             * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+             */
+            rootElement={document.getElementById('root')}
+            text='Click here to schedule!'
+          />
         </div>
       </div>
     </div>
